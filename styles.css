@@ -15,7 +15,6 @@ body {
   padding: 5px;
   color: #aaa;
   font-size: 20px;
-  line-height: 120%;
 }
 
 #app {
@@ -26,7 +25,7 @@ body {
   align-content: center;
   flex-direction: column;
   text-align: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 h1 {
@@ -57,7 +56,6 @@ span {
 .heading {
   position: relative;
   backdrop-filter: blur(4px);
-  padding-bottom: 10px;
   overflow: hidden;
 }
 .blur {
