@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Vue.js Started CDN Template</title>
+    <meta
+      name="description"
+      content="Welcome to my custom Vue.js starter template. This uses Vue directly from a CDN via a
+    script tag."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- DELETE template to get started -->
+      <div class="template">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg"
+          alt="Vue js logo"
+          height="150"
+        />
+        <div class="heading">
+          <h1><span>{{framework.name}}</span> Starter CDN Template</h1>
+          <div class="blur"></div>
+        </div>
+        <div class="">
+          <p>
+            Welcome to my custom Vue.js starter template. This uses Vue directly from a CDN via a
+            script tag. When using Vue from a CDN, there is no "build step" involved. This makes the
+            setup a lot simpler, and is suitable for enhancing static HTML or integrating with a
+            backend framework.
+          </p>
+        </div>
+        <div class="container">
+          <a
+            href="https://github.com/brysonnreed?tab=repositories"
+            target="_blank"
+            aria-label="Link to my other Github repositories"
+            class="btn"
+            >My Github Repos
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const { createApp, ref } = Vue;
+    createApp({
+      setup() {
+        const framework = ref({
+          name: "Vue.js",
+        });
+
+        return { framework };
+      },
+    }).mount("#app");
+  </script>
+</html>
